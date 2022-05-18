@@ -34,7 +34,10 @@ export PATH=$M2:$PATH
 source ~/.bashrc
 mvn -version
 ```
-
+# Install Git client
+```
+sudo yum install git
+```
 
 # Install Jenkins
 ```
