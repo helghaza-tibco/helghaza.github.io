@@ -22,14 +22,14 @@ wget https://dlcdn.apache.org/maven/maven-3/3.8.5/binaries/apache-maven-3.8.5-bi
 unzip apache-maven-3.8.5-bin.zip
 mv apache-maven-3.8.5 /usr/local/apache-maven
 ```
-Edit .bashrc file :
+- Edit .bashrc file :
 ```
 export M2_HOME=/usr/local/apache-maven
 export M2=$M2_HOME/bin 
 export PATH=$M2:$PATH
 ```
 
-Reload profile script and check maven installation:
+- Reload profile script and check maven installation:
 ```
 source ~/.bashrc
 mvn -version
@@ -44,4 +44,7 @@ sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io.key
 sudo yum upgrade
 sudo yum install jenkins
 sudo systemctl daemon-reload
+sudo systemctl enable jenkins
+sudo systemctl start jenkins
 ```
+- Open a browser, then go to your Linux box on the port 8080.
